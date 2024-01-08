@@ -19,6 +19,26 @@ body {
     padding: 0px 15px;
 }
 
+/* Input */
+.formKey {
+    padding: 5px;
+}
+.inputKey {
+    padding: 5px 10px;
+    color: blueviolet;
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+    width: 500px;
+    height: 50px;
+    border: none;
+    letter-spacing: 3px;
+}
+.inputKey:focus {
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(184, 135, 230);
+}
+
 /* Keyboard */
 .keyboard {
 }
@@ -35,14 +55,15 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 0);
-    border-right: 15px solid rgb(50, 41, 41);
-    border-bottom: 15px solid #847e7e;
-    border-left: 15px solid #151414;
+    border-top: 10px solid #242323;
+    border-right: 15px solid #353434;
+    border-bottom: 15px solid #353434;
+    border-left: 15px solid #242323;
     width: 100px;
     height: 100px;
     padding: 15px;
     text-transform: uppercase;
-    border-radius: 10px;
+    border-radius: 20px 20px 30px 30px;
 }
 .list {
 }
@@ -74,11 +95,42 @@ body {
 }
 
 /* Other */
+.other {
+}
+.oths {
+}
 .space {
-    margin: 0 auto;
     width: 100%;
     max-width: 1000px;
     min-width: 300px;
-
     border-radius: 15px 15px 50px 50px;
+}
+.ctrl {
+    width: 150px;
+    text-transform: initial;
+}
+.alt {
+    width: 150px;
+    text-transform: initial;
+}
+.shift {
+    width: 400px;
+    text-transform: initial;
+}
+.shift span {
+    margin-left: -200px;
+}
+
+/* Enter */
+.enter {
+}
+.ents {
+}
+.ent {
+    width: 350px;
+}
+
+/* Active */
+.active {
+    background-color: rgb(37, 246, 0);
 }
