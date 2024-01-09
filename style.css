@@ -9,7 +9,7 @@ body {
     font-family: "Montserrat";
     font-weight: 300;
     color: #ffffff;
-}
+}1
 
 .wrapper {
     min-height: 100%;
@@ -48,6 +48,7 @@ body {
 .items {
     display: flex;
     justify-content: center;
+    align-items: center;
     column-gap: 25px;
 }
 .item {
@@ -132,5 +133,10 @@ body {
 
 /* Active */
 .active {
-    background-color: rgb(37, 246, 0);
+    padding: 5px;
+    font-size: 25px;
+    border-top: 10px solid #242323;
+    border-right: 10px solid #353434;
+    border-bottom: 10px solid #353434;
+    border-left: 10px solid #242323;
 }
