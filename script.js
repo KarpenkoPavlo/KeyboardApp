@@ -40,3 +40,12 @@ function keyPush(event) {
 }
 
 document.querySelector('.inputKey').onkeydown = keyPush;
+/*-------------------------------------------------*/
+document.querySelectorAll('.butPress').addEventListener('click', (event) => {
+    let butPress = document.querySelector('.butPress');
+
+    if(event.key === 'onclick') {
+        butPress.classList.add('active');
+        console.log('gfd');
+    }
+})
