@@ -24,7 +24,7 @@ body {
 
 /* Input */
 .formKey {
-    padding: 5px;
+    padding: 5px 5px 30px 5px;
 }
 .inputKey {
     padding: 5px 10px;
@@ -55,7 +55,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 5px;
+    gap: 5px;
 }
 .item {
     display: flex;
@@ -63,6 +63,8 @@ body {
     align-items: center;
     width: 100px;
     height: 100px;
+    min-width: 50px;
+    min-height: 50px;
     background-color: rgb(0, 0, 0);
     border-top: 10px solid #242323;
     border-right: 15px solid #353434;
@@ -150,8 +152,37 @@ body {
 }
 
 @media(max-width: 2000px) {
+    .oths,
+    .letts {
+        flex-wrap: wrap;
+    }
+    
+    .numsLets {
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    .letters,
+    .numbers {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* 3 колонки равной ширины */
+        gap: 5px;
+    }
     .letts,
     .nums {
+        display: flex;
         flex-wrap: wrap;
+    }
+    .lett,
+    .num {
+        flex: 1 0 calc(10%); /* 33.33% ширины с учетом промежутков между элементами */
+        margin: 2.5px; /* Половина значения gap для учета промежутков */
+    }
+}
+
+@media(max-width: 991px) {
+    .formKey {
+        display: flex;
+        justify-content: center;
     }
 }

@@ -40,12 +40,16 @@ function keyPush(event) {
 }
 
 document.querySelector('.inputKey').onkeydown = keyPush;
-/*-------------------------------------------------*/
-document.querySelectorAll('.butPress').addEventListener('click', (event) => {
-    let butPress = document.querySelector('.butPress');
 
-    if(event.key === 'onclick') {
-        butPress.classList.add('active');
-        console.log('gfd');
-    }
-})
+/* Додаю можливість кліку по елементам. Додається клас active при кліку */
+function setActive() {
+    let butPressItems = document.querySelectorAll('.butPress');
+
+    butPressItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            item.classList.toggle('active');
+        });
+    });
+}
+
+setActive();
